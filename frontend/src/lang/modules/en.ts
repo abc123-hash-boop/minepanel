@@ -477,7 +477,7 @@ const message = {
         pgBindHelper: `This operation is used to create a new user and bind it to the target database. Currently, selecting users already existing in the database isn't supported.`,
         pgSuperUser: 'Super User',
         loadFromRemoteHelper:
-            'This will synchronize the database info on the server to 1Panel. Do you want to continue?',
+            'This will synchronize the database info on the server to panel. Do you want to continue?',
         passwordHelper: 'Unable to retrieve, please modify',
         remote: 'Remote',
         remoteDB: 'Remote server | Remote servers',
@@ -625,7 +625,7 @@ const message = {
             ollama_doc: 'You can visit the Ollama official website to search and find more models.',
             container_conn_helper: 'Use this address for inter-container access or connection',
             ollama_sync: 'Syncing Ollama model found the following models do not exist, do you want to delete them?',
-            from_remote: 'This model was not downloaded via 1Panel, no related pull logs.',
+            from_remote: 'This model was not downloaded via Panel, no related pull logs.',
             no_logs: 'The pull logs for this model have been deleted and cannot be viewed.',
         },
         proxy: {
@@ -790,7 +790,7 @@ const message = {
         privilegedHelper:
             'Allow the container to perform certain privileged operations on the host, which may increase container risks. Use with caution!',
         editComposeHelper:
-            'Note: The environment variables set will be written to the 1panel.env file by default.\nIf you want to use these parameters in the container, you also need to manually add an env_file reference in the compose file.',
+            'Note: The environment variables set will be written to the Panel.env file by default.\nIf you want to use these parameters in the container, you also need to manually add an env_file reference in the compose file.',
 
         upgradeHelper: 'Repository Name/Image Name: Image Version',
         upgradeWarning2:
@@ -903,7 +903,7 @@ const message = {
         fromChangeHelper: 'Switching the source will clean the current edited content. Do you want to continue?',
         composePathHelper: 'Configuration file save path: {0}',
         composeHelper:
-            'The composition created through 1Panel editor or template will be saved in the {0}/docker/compose directory.',
+            'The composition created through Panel editor or template will be saved in the {0}/docker/compose directory.',
         deleteFile: 'Delete file',
         deleteComposeHelper:
             'Delete all files related to container compose, including configuration files and persistent files. Please proceed with caution!',
@@ -920,7 +920,7 @@ const message = {
         exited: 'Exited',
         running: 'Running',
         composeDetailHelper:
-            'The compose is created external to 1Panel. The start and stop operations are not supported.',
+            'The compose is created external to Panel. The start and stop operations are not supported.',
         composeOperatorHelper: '{1} operation will be performed on {0}. Do you want to continue?',
         composeDownHelper:
             'This will stop and remove all containers and networks under the {0} compose. Do you want to continue?',
@@ -992,7 +992,7 @@ const message = {
         shell: 'Shell',
         log: 'Backup logs',
         logHelper: 'Backup system log',
-        ogHelper1: '1.1Panel System log ',
+        ogHelper1: '1.Panel System log ',
         logHelper2: '2. SSH login log of the server ',
         logHelper3: '3. All site logs ',
         containerCheckBox: 'In container (no need to enter the container command)',
@@ -1072,7 +1072,7 @@ const message = {
         noLogs: 'No task output yet...',
         errPath: 'Backup path [{0}] error, cannot download!',
         cutWebsiteLog: 'Website log rotation',
-        cutWebsiteLogHelper: 'The rotated log files will be backed up to the backup directory of 1Panel.',
+        cutWebsiteLogHelper: 'The rotated log files will be backed up to the backup directory of Panel.',
 
         requestExpirationTime: 'Upload request expiration time(Hours)',
         unitHours: 'Unit: Hours',
@@ -1462,7 +1462,7 @@ const message = {
         noNameFile: 'Untitled file',
         minimap: 'Code mini map',
         fileCanNotRead: 'File can not read',
-        panelInstallDir: `1Panel installation directory can't be deleted`,
+        panelInstallDir: `Panel installation directory can't be deleted`,
         wgetTask: 'Download Task',
         existFileTitle: 'Same name file prompt',
         existFileHelper: 'The uploaded file contains a file with the same name, do you want to overwrite it?',
@@ -1608,7 +1608,7 @@ const message = {
         timeZone: 'Time Zone',
         timeZoneChangeHelper: 'Changing the time zone requires restarting the service. Do you want to continue?',
         timeZoneHelper:
-            'Timezone modification depends on the system timedatectl service. take effect after restart the 1Panel service.',
+            'Timezone modification depends on the system timedatectl service. take effect after restart the Panel service.',
         timeZoneCN: 'Bei Jing',
         timeZoneAM: 'Los Angeles',
         timeZoneNY: 'New York',
@@ -1748,13 +1748,13 @@ const message = {
         unBindDomain: 'Unbind domain',
         panelSSL: 'Panel SSL',
         panelSSLHelper:
-            'After the automatic renewal of the panel SSL, you need to manually restart the 1Panel service for the changes to take effect.',
+            'After the automatic renewal of the panel SSL, you need to manually restart the Panel service for the changes to take effect.',
         unBindDomainHelper:
             'The action of unbinding a domain name may cause system insecurity. Do you want to continue?',
-        bindDomainHelper: 'After you bind the domain, only that domain can access 1Panel service.',
+        bindDomainHelper: 'After you bind the domain, only that domain can access Panel service.',
         bindDomainHelper1: 'Leave it blank to disable the domain name binding.',
         bindDomainWarning:
-            'After domain binding, you will be logged out and can only access 1Panel service through the domain name specified in the settings. Do you want to continue?',
+            'After domain binding, you will be logged out and can only access Panel service through the domain name specified in the settings. Do you want to continue?',
         allowIPs: 'Authorized IP',
         unAllowIPs: 'Unauthorized IP',
         unAllowIPsWarning:
@@ -1770,7 +1770,7 @@ const message = {
         secret: 'Secret',
         mfaInterval: 'Refresh interval(s)',
         mfaTitleHelper:
-            'The title is used to distinguish different 1Panel hosts. Scan again or manually add the secret key after you modify the title.',
+            'The title is used to distinguish different Panel hosts. Scan again or manually add the secret key after you modify the title.',
         mfaIntervalHelper: 'Scan again or manually add the secret key after you modify the refresh time.',
         mfaAlert:
             'One-time token is dynamically generated 6-digit number and based on the current time. Make sure that the server time is synchronized.',
@@ -1852,14 +1852,14 @@ const message = {
         ignoreRule: 'Ignore rule',
         editIgnoreRule: '@:commons.button.edit @.lower:setting.ignoreRule',
         ignoreHelper:
-            'This rule will be used to compress and backup the 1Panel data directory during creating snapshot. By default, socket files are ignored.',
+            'This rule will be used to compress and backup the Panel data directory during creating snapshot. By default, socket files are ignored.',
         ignoreHelper1: 'One per line. For example,\n*.log\n/opt/1panel/cache',
-        panelInfo: 'Write 1Panel basic information',
-        panelBin: 'Backup 1Panel system files',
+        panelInfo: 'Write Panel basic information',
+        panelBin: 'Backup Panel system files',
         daemonJson: 'Backup Docker configuration file',
-        appData: 'Backup installed apps from 1Panel',
-        panelData: 'Backup 1Panel data directory',
-        backupData: 'Backup local backup directory for 1Panel',
+        appData: 'Backup installed apps from Panel',
+        panelData: 'Backup Panel data directory',
+        backupData: 'Backup local backup directory for Panel',
         compress: 'Create Snapshot file',
         upload: 'Upload snapshot file',
         recoverDetail: 'Recover detail',
@@ -1873,18 +1873,18 @@ const message = {
         recoverErrSize: 'Detected insufficient disk space, please check or clean up and try again!',
         recoverHelper:
             'Starting recovery from snapshot {0}, please confirm the following information before proceeding:',
-        recoverHelper1: 'Recovery requires restarting Docker and 1Panel services',
+        recoverHelper1: 'Recovery requires restarting Docker and Panel services',
         recoverHelper2:
             'Please ensure there is sufficient disk space on the server (Snapshot file size: {0}, Available space: {1})',
         recoverHelper3:
             'Please ensure the server architecture matches the architecture of the server where the snapshot was created (Current server architecture: {0})',
         rollback: 'Rollback',
         rollbackHelper:
-            'Rolling back this recovery will replace all files from this recovery, and may require restarting Docker and 1Panel services. Do you want to continue?',
+            'Rolling back this recovery will replace all files from this recovery, and may require restarting Docker and Panel services. Do you want to continue?',
 
         upgradeRecord: 'Upgrade record',
         upgrading: ' Upgrading, please wait...',
-        upgradeHelper: 'The upgrade requires restarting the 1Panel service. Do you want to continue?',
+        upgradeHelper: 'The upgrade requires restarting the Panel service. Do you want to continue?',
         noUpgrade: 'It is currently the latest version',
         versionHelper:
             'Name rules: [major version].[functional version].[Bug fix version], as shown in the following example:',
@@ -1962,13 +1962,13 @@ const message = {
         monitor:
             'Upgrade to the professional version to view the real-time status of the website, visitor trends, visitor sources, request logs and other information. ',
         alert: 'Upgrade to the professional version to receive alarm information via SMS and view alarm logs, fully control various key events, and ensure worry-free system operation',
-        node: 'Upgrading to the professional version allows you to manage multiple Linux servers with 1Panel.',
+        node: 'Upgrading to the professional version allows you to manage multiple Linux servers with Panel.',
         fileExchange: 'Upgrade to the Professional Edition to quickly transfer files between multiple servers.',
         app: 'Upgrade to the professional version to view service information, abnormal monitoring, etc. through the mobile APP. ',
     },
     clean: {
         scan: 'Start scanning',
-        scanHelper: 'Easily clean up junk files produced during 1Panel runtime',
+        scanHelper: 'Easily clean up junk files produced during Panel runtime',
         clean: 'Clean now',
         reScan: 'Rescan',
         cleanHelper: `This will clean up the selected system junk files and can't be undone. Do you want to continue?`,
@@ -2613,7 +2613,7 @@ const message = {
         execShell: 'Execute the script after certification request.',
         shell: 'Script content',
         shellHelper:
-            'The default execution directory of the script is the 1Panel installation directory. If a certificate is pushed into local directory, the execution directory will be the certificate push directory. The default execution timeout is 30 minutes.',
+            'The default execution directory of the script is the Panel installation directory. If a certificate is pushed into local directory, the execution directory will be the certificate push directory. The default execution timeout is 30 minutes.',
         customAcme: 'Custom ACME Service',
         customAcmeURL: 'ACME Service URL',
     },
@@ -3289,7 +3289,7 @@ const message = {
                 'Record file access and operation logs for subsequent auditing and analysis by administrators, as well as to identify potential security threats.',
 
             settingTitle1: 'Custom Welcome Message',
-            settingContent1: 'Set a custom welcome message on the 1Panel login page.',
+            settingContent1: 'Set a custom welcome message on the Panel login page.',
             settingTitle2: 'Custom Logo',
             settingContent2: 'Allow uploading logo images containing brand names or other text.',
             settingTitle3: 'Custom Website Icon',
@@ -3336,7 +3336,7 @@ const message = {
                 'Easily transfer project files between different nodes, flexible management of multiple servers.',
 
             appTitle1: 'Flexible Panel Management',
-            appContent1: 'Easily manage your 1Panel server anytime, anywhere.',
+            appContent1: 'Easily manage your Panel server anytime, anywhere.',
             appTitle2: 'Comprehensive Service Information',
             appContent2:
                 'Manage basic applications, websites, Docker, databases, etc., and quickly create applications and websites via the mobile app.',
@@ -3379,11 +3379,11 @@ const message = {
             nodeSyncHelper2: '2. Connection information between the main node and sub-nodes',
 
             panelExist:
-                '1Panel V1 service is running on this node. Please upgrade to V2 using the migration script before adding.',
+                'Panel V1 service is running on this node. Please upgrade to V2 using the migration script before adding.',
             coreExist: 'This node has already been enabled as the main node and cannot be added as a slave node.',
             agentExist:
-                '1panel-agent is already installed on this node. Continuing will preserve existing data and only replace the 1panel-agent service. Proceed?',
-            dataExist: '1Panel historical data exists on this node. Confirm to continue adding?',
+                'Panel-agent is already installed on this node. Continuing will preserve existing data and only replace the Panel-agent service. Proceed?',
+            dataExist: 'Panel historical data exists on this node. Confirm to continue adding?',
             errLicense: 'The license bound to this node is unavailable. Please check and try again!',
             reinstallHelper: 'Reinstall node {0}, do you want to continue?',
             unhealthyCheck: 'Abnormal Check',
@@ -3400,7 +3400,7 @@ const message = {
             operateHelper: 'The following nodes will undergo {0} operation, do you want to continue?',
             forceDeleteHelper: 'Force delete will ignore node deletion errors and delete database metadata',
             uninstall: 'Delete node data',
-            uninstallHelper: 'This will delete all 1Panel related data of the node. Proceed with caution!',
+            uninstallHelper: 'This will delete all Panel related data of the node. Proceed with caution!',
             baseDir: 'Installation Directory',
             baseDirHelper:
                 'When the installation directory is empty, it will be installed in the /opt directory by default',
